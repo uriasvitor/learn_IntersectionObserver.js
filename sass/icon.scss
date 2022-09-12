@@ -1,0 +1,74 @@
+
+.logo{
+    display: flex;
+    padding: 0 22px;
+
+    &:hover{
+        .letter{
+                animation: letterRotate 1.2s, forwards;
+
+                @keyframes letterRotate {
+                    0% {
+                        transform: rotate(0deg);
+                    }
+        
+                    50% {
+                        transform: rotate(90deg);
+                        opacity: 0.5;
+                        border-top: 12px solid black;
+                    }
+        
+                    100% {
+                        transform: rotate(90deg);
+                        border-radius: 26px;
+                        border-top: 12px solid black;
+                    }
+                }
+                
+            }
+
+        .logo_img{
+            animation: paddingLogo 1s, forwards;
+            
+
+            @keyframes paddingLogo {
+                0%{
+                    padding: 0 0;
+                }
+                50%{
+                    padding: 0 10px;
+                }
+                60%{
+                    padding: 0 15px;
+                }
+                100%{
+                    padding: 0 20px;
+                    animation: step-end;
+                }
+            }
+        }    
+    }
+}
+
+.letter{
+    display: flex;
+    width: 22px;
+    height: 28px;
+    background-color: rgba(255, 255, 255, 0);
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-radius: 0 0 26px 26px;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+
+    .circle{
+        width: 14px;
+        height: 14px;
+        background-color: black;
+        border-radius: 50%;
+    }
+
+    
+}
