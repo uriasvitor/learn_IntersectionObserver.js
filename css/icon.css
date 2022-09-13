@@ -25,8 +25,17 @@
   background-color: black;
   border-radius: 50%;
 }
-.letter:hover {
-  background: linear-gradient(to right, #074C00, #42A341, #B8E2A3);
+.letter.light {
+  align-items: flex-end;
+}
+.letter.light .circle {
+  margin: 4px;
+}
+.letter.dark {
+  align-items: flex-start;
+}
+.letter.dark .circle {
+  margin: 4px;
 }
 
 .logo_img {

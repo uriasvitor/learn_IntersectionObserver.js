@@ -26,8 +26,21 @@
         background-color: black;
         border-radius: 50%;
     }
-    &:hover{
-        background:linear-gradient(to right, #074C00, #42A341, #B8E2A3);
+
+    &.light{
+        align-items: flex-end;
+
+        & .circle{
+            margin: 4px;
+        }
+    }
+
+    &.dark{
+        align-items: flex-start;
+
+        & .circle{
+            margin: 4px;
+        }
     }
     
 }
