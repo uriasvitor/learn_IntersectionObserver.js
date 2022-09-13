@@ -2,52 +2,9 @@
 .logo{
     display: flex;
     padding: 0 22px;
-
-    &:hover{
-        .letter{
-                animation: letterRotate 1.2s, forwards;
-
-                @keyframes letterRotate {
-                    0% {
-                        transform: rotate(0deg);
-                    }
-        
-                    50% {
-                        transform: rotate(90deg);
-                        opacity: 0.5;
-                        border-top: 12px solid black;
-                    }
-        
-                    100% {
-                        transform: rotate(90deg);
-                        border-radius: 26px;
-                        border-top: 12px solid black;
-                    }
-                }
-                
-            }
-
-        .logo_img{
-            animation: paddingLogo 1s, forwards;
-            
-
-            @keyframes paddingLogo {
-                0%{
-                    padding: 0 0;
-                }
-                50%{
-                    padding: 0 10px;
-                }
-                60%{
-                    padding: 0 15px;
-                }
-                100%{
-                    padding: 0 20px;
-                    animation: step-end;
-                }
-            }
-        }    
-    }
+    width: 140px;
+    height: 35px;
+    align-items: center;
 }
 
 .letter{
@@ -69,6 +26,13 @@
         background-color: black;
         border-radius: 50%;
     }
-
+    &:hover{
+        background:linear-gradient(to right, #074C00, #42A341, #B8E2A3);
+    }
     
+}
+
+.logo_img{
+    width: 82px;
+    height: 32px;
 }
