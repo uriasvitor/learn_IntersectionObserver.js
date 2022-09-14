@@ -1,5 +1,6 @@
 const getLetter = document.querySelector(".logo");
 const state = document.querySelector(".letter");
+
 const animaDuration = 1000;
 
 const setLetter = (e)=>{
@@ -71,8 +72,11 @@ const setLetter = (e)=>{
     
             });
 
+        document.querySelector('.logo').addEventListener('mouseout',()=>{
+            
+            console.log("mouseenter")
+        })
 
 }
-
 
 getLetter.addEventListener("mouseover",setLetter)
