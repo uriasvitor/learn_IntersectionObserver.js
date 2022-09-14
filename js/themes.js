@@ -28,7 +28,6 @@ const verifySwitch = ()=>{
 
 const darkAnimation = ()=>{
     isValid = !isValid;
-    console.log(isValid)
 
     if(isValid === true){
         document.querySelector("html").setAttribute("data-theme",'light')
