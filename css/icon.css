@@ -6,6 +6,12 @@
   align-items: center;
 }
 
+.logo_img {
+  width: 86px;
+  height: 32px;
+  margin: 0 8px;
+}
+
 .letter {
   display: flex;
   width: 22px;
@@ -36,11 +42,6 @@
 }
 .letter.dark .circle {
   margin: 4px;
-}
-
-.logo_img {
-  width: 82px;
-  height: 32px;
 }
 
 /*# sourceMappingURL=icon.css.map */
