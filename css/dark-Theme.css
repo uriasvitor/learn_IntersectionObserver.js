@@ -4,7 +4,20 @@ html[data-theme=dark] body {
 html[data-theme=dark] nav {
   background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
 }
-html[data-theme=dark] .logo {
+html[data-theme=dark] .logo-img {
+  color: white;
+}
+html[data-theme=dark] .img-mobile {
+  display: none;
+  width: 55px;
+  height: 50px;
+}
+@media screen and (max-width: 880px) {
+  html[data-theme=dark] .img-mobile.dark {
+    display: block;
+  }
+}
+html[data-theme=dark] .switch-letter {
   filter: invert(1);
 }
 html[data-theme=dark] a {

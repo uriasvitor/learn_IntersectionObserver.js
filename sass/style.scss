@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300&family=Raleway:ital@1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Laila:wght@500&display=swap');
-@import "./breakpoints.scss";
+
+@import "./beakpoints/breakpoints.scss";
 
 body{
     margin: 0;
@@ -9,7 +11,7 @@ body{
     background: linear-gradient(to top, #dfe9f3 0%, white 100%);
 
     @include small-screen{
-        background-color: aqua;
+        background: linear-gradient(to top, #dfe9f3 0%, white 100%);
     }
 
 }
@@ -18,12 +20,12 @@ nav{
     width: 100%;
     height: 70px;
     z-index: 99999;
-    background-color: #fff;
+    background: radial-gradient(circle at 12.3% 19.3%, rgb(85, 88, 218) -59%, rgb(95, 209, 249) 100.2%);
     position: fixed;
     
     &.scrolled{
         background-color: rgba(255, 255, 255, 0.459);
-        box-shadow: 0px -17px 20px;
+        box-shadow: 0px 0px 3px 0px;;
     }
 
 }
@@ -41,7 +43,7 @@ nav{
     display: none;
 }
 
-.items-menu{
+.menu{
     display: flex;
     align-items: center;   
 
@@ -49,6 +51,10 @@ nav{
         margin: 0 20px;
     }
 
+    
+}
+
+.itens-menu{
     ul, li{
         display: inline-flex;
 
@@ -60,7 +66,7 @@ nav{
     li{
         margin: 0 25px;
         font-size: 20px;
-        font-family: 'Laila', sans-serif;
+        font-family: "Raleway", sans-serif;
         color: rgb(0, 0, 0);
     }
     
@@ -75,6 +81,20 @@ nav{
         }
         
     }
+
+    &.mobile-on{
+        width: 168px;
+        border: 2px solid red;
+        display: block;
+        top: 65px;
+        right: 0;
+        position: absolute;
+
+        ul, li{
+            display: block;    
+        }
+    }
+    
 }
 
 .btn-menu{
@@ -83,12 +103,105 @@ nav{
     @include small-screen{
         display: flex;
         align-items: center;
-        width: 20px;
-        height: 20px;
-        background-color: #fff;        
-  
-   }
+        width: 40px;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0);        
+        transition: all 0.5s;
+
+        .bar{
+            width: 40px;
+            height:5px;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: inset 0px 1px 2px 0px;
+            
+            &:after,&:before{
+                content: '';
+                width:40px;
+                height:5px;
+                border-radius: 10px;
+                background-color: #fff;
+                position: absolute;
+                box-shadow: inset 0px 1px 2px 0px;
+                transition: all 0.5s;
+            }
+
+            &::after{
+                top: 45px;
+            }
+
+            &::before{
+                top: 20px;
+                
+            }
+
+        }   
+
+        &.is-open{
+            transition: cubic-bezier(0.165, 0.84, 0.44, 1) 3s;
+            .bar{
+                width: 0px;
+                height:0px;
+                border-radius: 0;
+                background-color: rgba(255, 255, 255, 0);
+                box-shadow: inset 0px 0px 0px 0px;
+                
+                
+                &::after,&::before{
+                    box-shadow: inset 0px 0px 0px 0px;
+                    transition: all 0.5s;
+                }
+
+                &::after{
+                    top: 33px;
+                    transform: rotate(45deg);
+                }
+    
+                &::before{
+                    top: 33px;
+                    transform: rotate(-45deg);
+                }
+                    
+                }
+    
+            }
+    }
 
 }
 
 
+
+.switch-letter{
+    
+    animation: switchLetter 2s, infinite;
+    
+    @keyframes switchLetter {
+            0%{
+                border-bottom: 2px solid black;
+                border-left: 2px solid black;
+                border-right: 2px solid black;
+                border-radius: 0 0 26px 26px;
+            }
+            
+            25%{
+                border-bottom: 2px solid white;
+                border-left: 2px solid white;
+                border-right: 2px solid black;
+            }
+            
+            50%{
+                border-bottom: 2px solid white;
+                border-left: 2px solid white;
+                border-right: 2px solid rgb(255, 255, 255);
+            }
+            
+            100%{
+                border-bottom: 2px solid white;
+                border-left: 2px solid white;
+                border-right: 2px solid rgb(255, 255, 255);
+                
+            }
+            
+        }
+        
+}
