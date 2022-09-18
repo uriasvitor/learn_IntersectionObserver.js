@@ -43,7 +43,7 @@
     .circle{
         width: 14px;
         height: 14px;
-        background-color: black;
+        background-color: rgb(255, 255, 255);
         border-radius: 50%;
         animation: circle 5s, infinite;
 
@@ -66,22 +66,42 @@
 
     &.light{
         align-items: flex-end;
-
+        
         & .circle{
             margin: 4px;
         }
+
     }
 
     &.dark{
         align-items: flex-start;
-
-        & .circle{
+        
+        .circle{
             margin: 4px;
         }
     }
 
     @include small-screen{
         display: none;
+        transform: rotate(90deg);
+        height: 40px;   
+        border-radius:26px;
+        border: 2px solid white;
+        
+        .circle{
+            background-color: white;
+        }
+
+        &.is-open{
+            display: flex;
+            order: 1;
+            margin: 0 20px;
+            transform: rotate(90deg);
+
+            .circle{
+                background-color: white;
+            }
+        }
     }
 
 }

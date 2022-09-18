@@ -84,14 +84,23 @@ nav{
 
     &.mobile-on{
         width: 168px;
-        border: 2px solid red;
+        padding: 5px;
         display: block;
-        top: 65px;
+        top: 70px;
         right: 0;
+        border: 1px solid white;
         position: absolute;
+        background: radial-gradient(circle at 12.3% 19.3%, rgb(85, 88, 218) -59%, rgb(95, 209, 249) 100.2%);
+        box-shadow: 0px 0px 3px 0px;
+        
+        ul, li,a{
+            display: block;
+            color: white;
+        }
 
-        ul, li{
-            display: block;    
+        li{
+            padding: 0 0 25px;
+            
         }
     }
     
@@ -169,39 +178,3 @@ nav{
 
 }
 
-
-
-.switch-letter{
-    
-    animation: switchLetter 2s, infinite;
-    
-    @keyframes switchLetter {
-            0%{
-                border-bottom: 2px solid black;
-                border-left: 2px solid black;
-                border-right: 2px solid black;
-                border-radius: 0 0 26px 26px;
-            }
-            
-            25%{
-                border-bottom: 2px solid white;
-                border-left: 2px solid white;
-                border-right: 2px solid black;
-            }
-            
-            50%{
-                border-bottom: 2px solid white;
-                border-left: 2px solid white;
-                border-right: 2px solid rgb(255, 255, 255);
-            }
-            
-            100%{
-                border-bottom: 2px solid white;
-                border-left: 2px solid white;
-                border-right: 2px solid rgb(255, 255, 255);
-                
-            }
-            
-        }
-        
-}

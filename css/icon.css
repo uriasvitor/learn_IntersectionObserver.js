@@ -39,7 +39,7 @@
 .switch-letter .circle {
   width: 14px;
   height: 14px;
-  background-color: black;
+  background-color: rgb(255, 255, 255);
   border-radius: 50%;
   animation: circle 5s, infinite;
 }
@@ -71,6 +71,22 @@
 @media screen and (max-width: 880px) {
   .switch-letter {
     display: none;
+    transform: rotate(90deg);
+    height: 40px;
+    border-radius: 26px;
+    border: 2px solid white;
+  }
+  .switch-letter .circle {
+    background-color: white;
+  }
+  .switch-letter.is-open {
+    display: flex;
+    order: 1;
+    margin: 0 20px;
+    transform: rotate(90deg);
+  }
+  .switch-letter.is-open .circle {
+    background-color: white;
   }
 }
 

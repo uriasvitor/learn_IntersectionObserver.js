@@ -12,14 +12,14 @@ export default function logoAnimate(){
             { 
                 transform: 'rotate(90deg)',
                 opacity: 0.2,
-                borderTop: '2px solid black',
+                borderTop: '2px solid ',
                 height: '30px'
                 
             },
             
             {   transform: 'rotate(90deg)',
                 borderRadius:'26px',
-                borderTop: '2px solid black',
+                borderTop: '2px solid white',
                 height: '40px'
             },
         

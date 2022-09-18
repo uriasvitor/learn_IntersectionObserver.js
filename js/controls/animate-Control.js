@@ -4,6 +4,7 @@ const SwitchStatus = document.querySelector(".switch-letter");
 const getMenuMob = document.querySelector(".btn-menu")
 const animaDuration = 1000;
 
+
 const setAnimate = (e)=>{
     e.preventDefault()
     
@@ -32,12 +33,15 @@ const menuMobile = ()=>{
     const itensMenu = document.querySelector('.itens-menu')
     const btnMenu = document.querySelector('.btn-menu')
 
-    if(itensMenu.classList.contains('mobile-on') && btnMenu.classList.contains('is-open')){
+    if(itensMenu.classList.contains('mobile-on') && btnMenu.classList.contains('is-open') && SwitchStatus.classList.contains('is-open')){
         document.querySelector('.itens-menu').classList.remove('mobile-on');
         document.querySelector('.btn-menu').classList.remove('is-open')
-    }else{
+        SwitchStatus.classList.remove('is-open')
+
+        }else{
         document.querySelector('.itens-menu').classList.add('mobile-on');
         document.querySelector('.btn-menu').classList.add('is-open')
+        SwitchStatus.classList.add('is-open')
     }
 } 
 

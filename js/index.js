@@ -5,4 +5,5 @@ function onload(){
     }else{
         document.querySelector("html").setAttribute("data-theme",'light')
     }
-}
+
+ }
