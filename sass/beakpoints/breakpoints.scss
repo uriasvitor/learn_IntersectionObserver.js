@@ -2,6 +2,13 @@ $small: 880;
 $medium: 1000;
 $desktop:1900;
 
+$btn_dark: white;
+$btn_light:black;
+$title_light:black;
+$title_dark:white;
+$background_dark: light;
+$background_light:dark;
+$bg_main:radial-gradient(circle at 12.3% 19.3%, rgb(85, 88, 218) -59%, rgb(95, 209, 249) 100.2%);
 
 @mixin small-screen {
     @media screen and (max-width: (($small)+"px")) {
