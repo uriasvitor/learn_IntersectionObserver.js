@@ -34,6 +34,7 @@ header{
         background-color: rgba(255, 255, 255, 0.459);
         outline: 2px solid white;
         box-shadow: 0px 0px 3px 0px;;
+        transition: all 1s;
     }
 
 }
@@ -102,14 +103,17 @@ header{
         display: block;
         top: 70px;
         right: 0;
-        border: 1px solid white;
+        border-top: 2px solid white;
+        border-radius: 0 0 0 12px;
         position: absolute;
         background: radial-gradient(circle at 12.3% 19.3%, rgb(85, 88, 218) -59%, rgb(95, 209, 249) 100.2%);
-        box-shadow: 0px 0px 3px 0px;
-        
+        box-shadow: 0px 0px 4px 0px white;
+        transition: all 1s;
+
         ul, li,a{
             display: block;
             color: white;
+            transition: all 1s;
         }
 
         li{
@@ -201,6 +205,10 @@ header{
     margin: 0 auto;
     height: 3000px;
     padding-top: 70px;
+
+    @include small-screen{
+        padding: 8px;
+    }
 }
 
 .main{
@@ -213,6 +221,10 @@ h1.title{
     font-size: 54px;
     line-height: 10px;
     color: #fff;
+
+    @include small-screen{
+        line-height: 70px;
+    }
 }
 
 .sub0{
@@ -235,5 +247,10 @@ h1.title{
     font-weight: 800;
     color: #5a92e8;
     font-family: 'Quicksand', sans-serif;
+
+    &:hover{
+        background-color: #5a92e8;
+        color: white;
+      }
 
 }

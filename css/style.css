@@ -30,6 +30,7 @@ header.scrolled {
   background-color: rgba(255, 255, 255, 0.459);
   outline: 2px solid white;
   box-shadow: 0px 0px 3px 0px;
+  transition: all 1s;
 }
 
 .navbar {
@@ -89,14 +90,17 @@ header.scrolled {
   display: block;
   top: 70px;
   right: 0;
-  border: 1px solid white;
+  border-top: 2px solid white;
+  border-radius: 0 0 0 12px;
   position: absolute;
   background: radial-gradient(circle at 12.3% 19.3%, rgb(85, 88, 218) -59%, rgb(95, 209, 249) 100.2%);
-  box-shadow: 0px 0px 3px 0px;
+  box-shadow: 0px 0px 4px 0px white;
+  transition: all 1s;
 }
 .itens-menu.mobile-on ul, .itens-menu.mobile-on li, .itens-menu.mobile-on a {
   display: block;
   color: white;
+  transition: all 1s;
 }
 .itens-menu.mobile-on li {
   padding: 0 0 25px;
@@ -171,6 +175,11 @@ header.scrolled {
   height: 3000px;
   padding-top: 70px;
 }
+@media screen and (max-width: 880px) {
+  .content {
+    padding: 8px;
+  }
+}
 
 .main {
   height: 550px;
@@ -183,6 +192,11 @@ h1.title {
   font-size: 54px;
   line-height: 10px;
   color: #fff;
+}
+@media screen and (max-width: 880px) {
+  h1.title {
+    line-height: 70px;
+  }
 }
 
 .sub0 {
@@ -205,6 +219,10 @@ h1.title {
   font-weight: 800;
   color: #5a92e8;
   font-family: "Quicksand", sans-serif;
+}
+.btn-main:hover {
+  background-color: #5a92e8;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
