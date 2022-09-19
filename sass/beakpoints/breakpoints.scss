@@ -1,0 +1,10 @@
+$small: 880;
+$medium: 1000;
+$desktop:1900;
+
+
+@mixin small-screen {
+    @media screen and (max-width: (($small)+"px")) {
+      @content;
+    }
+}

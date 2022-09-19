@@ -1,53 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300&family=Raleway:ital@1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Laila:wght@500&display=swap');
+
+@import "./beakpoints/breakpoints.scss";
 
 body{
     margin: 0;
     padding: 0;
     width: 100%;
     height: 2000px;
-    background: linear-gradient(to top, #dfe9f3 0%, white 100%);}
+    background: linear-gradient(to top, #dfe9f3 0%, white 100%);
 
-nav{
-    width: 100%;
-    height: 70px;
-    z-index: 99999;
-    background-color: #fff;
-    position: fixed;
-    
-
-    &.scrolled{
-        background-color: rgba(255, 255, 255, 0.459);
-        box-shadow: 0px -17px 20px;
+    @include small-screen{
+        background: linear-gradient(to top, #dfe9f3 0%, white 100%);
     }
 
 }
 
+header{
+    width: 100%;
+    height: 70px;
+    z-index: 99999;
+    background: radial-gradient(circle at 12.3% 19.3%, rgb(85, 88, 218) -59%, rgb(95, 209, 249) 100.2%);
+    position: fixed;
+    
+    &.scrolled{
+        background-color: rgba(255, 255, 255, 0.459);
+        box-shadow: 0px 0px 3px 0px;;
+    }
 
-.header{
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.content-bar{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
+    width: 1190px;
     height: 100%;
 
 }
 
-.roof{
+.nav-footer{
     display: none;
-
 }
 
+.menu{
+    display: flex;
+    align-items: center;   
 
-.items-menu{
+    @include small-screen{
+        margin: 0 20px;
+    }
 
-    ul,li{
+    
+}
+
+.itens-menu{
+    ul, li{
         display: inline-flex;
+
+        @include small-screen{
+            display: none;
+        }
     }
     
     li{
         margin: 0 25px;
         font-size: 20px;
-        font-family: 'Laila', sans-serif;
+        font-family: "Raleway", sans-serif;
         color: rgb(0, 0, 0);
     }
     
@@ -55,15 +80,107 @@ nav{
     a{
         outline: none;
         text-decoration: none;
-        color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
 
         &:hover{
             color: grey;
         }
         
     }
+
+    &.mobile-on{
+        width: 168px;
+        padding: 5px;
+        display: block;
+        top: 70px;
+        right: 0;
+        border: 1px solid white;
+        position: absolute;
+        background: radial-gradient(circle at 12.3% 19.3%, rgb(85, 88, 218) -59%, rgb(95, 209, 249) 100.2%);
+        box-shadow: 0px 0px 3px 0px;
+        
+        ul, li,a{
+            display: block;
+            color: white;
+        }
+
+        li{
+            padding: 0 0 25px;
+            
+        }
+    }
+    
 }
 
+.btn-menu{
+    display: none;
 
+    @include small-screen{
+        display: flex;
+        align-items: center;
+        width: 40px;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0);        
+        transition: all 0.5s;
 
+        .bar{
+            width: 40px;
+            height:5px;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: inset 0px 1px 2px 0px;
+            
+            &:after,&:before{
+                content: '';
+                width:40px;
+                height:5px;
+                border-radius: 10px;
+                background-color: #fff;
+                position: absolute;
+                box-shadow: inset 0px 1px 2px 0px;
+                transition: all 0.5s;
+            }
+
+            &::after{
+                top: 45px;
+            }
+
+            &::before{
+                top: 20px;
+                
+            }
+
+        }   
+
+        &.is-open{
+            transition: cubic-bezier(0.165, 0.84, 0.44, 1) 3s;
+            .bar{
+                width: 0px;
+                height:0px;
+                border-radius: 0;
+                background-color: rgba(255, 255, 255, 0);
+                box-shadow: inset 0px 0px 0px 0px;
+                
+                
+                &::after,&::before{
+                    box-shadow: inset 0px 0px 0px 0px;
+                    transition: all 0.5s;
+                }
+
+                &::after{
+                    top: 33px;
+                    transform: rotate(45deg);
+                }
+    
+                &::before{
+                    top: 33px;
+                    transform: rotate(-45deg);
+                }
+                    
+                }
+    
+            }
+    }
+
+}
 

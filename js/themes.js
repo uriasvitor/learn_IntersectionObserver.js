@@ -1,6 +1,6 @@
 var isValid;
-switchBtn = document.querySelector('.letter')
-switchState = document.querySelector('.letter')
+switchBtn = document.querySelector('.switch-letter')
+switchState = document.querySelector('.switch-letter')
 getTheme = document.querySelector("html");
 
 const verifySwitch = ()=>{
@@ -10,7 +10,6 @@ const verifySwitch = ()=>{
         isValid = false;
         switchState.classList.add("dark")
         switchState.classList.remove("light")
-        
     }
 
     if(isValid == true){

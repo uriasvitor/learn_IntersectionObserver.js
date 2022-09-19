@@ -4,38 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./img/logo_light.png">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/icon.css">
     <link rel="stylesheet" href="./css/dark-Theme.css">
+    <link rel="stylesheet" href="./css/animations.css">
     <title>UricSoftware</title>
 </head>
 <body onload="onload()">
     <div id="app">
-        <nav>
-            <div class="header">
-                <div class="logo">
-                    <div class="letter">
-                        <div class="circle"></div>
+        <header role="banner">
+            <div class="navbar">
+                <div class="content-bar">
+                    <div class="logo">
+                        <div class="switch-letter">
+                            <div class="circle"></div>
+                        </div>
+                        <!-- <img src="./img/logo2.png" alt="" srcset="" class="logo_img"> -->
+                        <div class="logo-img">NILO</div>
+                        <img src="./img/logo_mobile.png" alt="" srcset="" class="img-mobile dark" >
+                        <img src="./img/logo_light.png" alt="" srcset="" class="img-mobile light" >
                     </div>
-                    <img src="./img/logo2.png" alt="" srcset="" class="logo_img">
+                    <div class="menu">
+                        <div class="btn-menu">
+                            <div class="bar"></div>
+                        </div>
+                        <div class="itens-menu">
+                            <ul>
+                                <li class="home"><a href="#">Home</a></li>
+                                <li class="produtos"><a href="#">Produtos</a></li>
+                                <li class="suport"><a href="#">Suporte</a></li>
+                                <li class="download"><a href="#">Download</a></li>
+                                <li class="contato"><a href="#">Contato</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="items-menu">
-                    <ul>
-                        <li class="home"><a href="#">Home</a></li>
-                        <li class="produtos"><a href="#">Produtos</a></li>
-                        <li class="suport"><a href="#">Suporte</a></li>
-                        <li class="download"><a href="#">Download</a></li>
-                        <li class="download"><a href="#">Contato</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="roof"></div>
-        </nav>
-        <div class="container"></div>
+         </header>
+            <div class="container"></div>
+        </div>
     </div>
 </body>
 <script src="./js/themes.js"></script>
-<script src="./js/animation.js"></script>
-<script src="./js/scroll.js"></script>
-<script src="./js/script.js"></script>
+<script type="module" src="./js/controls/animate-Control.js"></script>
+<script src="./js/controls/scroll-Control.js"></script>
+<script src="./js/index.js"></script>
 </html>

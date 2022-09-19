@@ -1,20 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import "./beakpoints/breakpoints.scss";
 
 .logo{
     display: flex;
     padding: 0 22px;
-    width: 140px;
+    width: 150px;
     height: 35px;
     align-items: center;
+    
 }
 
-.letter{
+.logo-img{
+    font-size: 35px;
+    margin: 0 4px;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+
+    &[data-animate='stopped']::before{
+        content: "U";
+    }
+    
+    @include small-screen{
+        display: none;
+    }
+}
+
+
+.switch-letter{
     display: flex;
     width: 22px;
     height: 28px;
     background-color: rgba(255, 255, 255, 0);
-    border-bottom: 2px solid black;
-    border-left: 2px solid black;
-    border-right: 2px solid black;
+    border-bottom: 2px solid white;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
     border-radius: 0 0 26px 26px;
     flex-wrap: nowrap;
     align-items: center;
@@ -23,29 +43,78 @@
     .circle{
         width: 14px;
         height: 14px;
-        background-color: black;
+        background-color: rgb(255, 255, 255);
         border-radius: 50%;
+        animation: circle 5s, infinite;
+
+            @keyframes circle {
+                    0%{
+                        background: rgb(0, 0, 0);
+                        opacity: 1;
+                    }
+
+                    50%{
+                        background: rgb(255, 255, 255);
+                        opacity: 0.7;
+                    }
+
+                    100%{
+                        background: rgb(0, 0, 0);
+                    }
+            }
     }
 
     &.light{
         align-items: flex-end;
-
+        
         & .circle{
             margin: 4px;
         }
+
     }
 
     &.dark{
         align-items: flex-start;
-
-        & .circle{
+        
+        .circle{
             margin: 4px;
         }
     }
-    
+
+    @include small-screen{
+        display: none;
+        transform: rotate(90deg);
+        height: 40px;   
+        border-radius:26px;
+        border: 2px solid white;
+        
+        .circle{
+            background-color: white;
+        }
+
+        &.is-open{
+            display: flex;
+            order: 1;
+            margin: 0 20px;
+            transform: rotate(90deg);
+
+            .circle{
+                background-color: white;
+            }
+        }
+    }
+
 }
 
-.logo_img{
-    width: 82px;
-    height: 32px;
+.img-mobile{
+    display: none;
+    width: 55px;
+    height: 50px;
+
+    &.light{
+        @include small-screen{
+            display: block;
+        }
+    }
 }
+

@@ -1,22 +1,43 @@
+@import "./beakpoints/breakpoints.scss";
+
 html[data-theme="dark"]{
   
     body{
       background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
     }
 
-    nav{
+    header{
         background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
 
     }
+    .navbar{
+      outline:  1px solid gold;
+    }
 
-    .logo{
-        filter:invert(1);
+    .logo-img{
+      color: white;
+    }
+
+    .img-mobile{
+      display: none;
+      width: 55px;
+      height: 50px;
+      
+      &.dark{
+          @include small-screen{
+          display: block;
+        }
       }
-    
-      a{
-        outline: none;
-        text-decoration: none;
-        color: rgb(255, 255, 255);
+
+    }
+    .switch-letter{
+      // filter:invert(1);
+    }
+
+    a{
+      outline: none;
+      text-decoration: none;
+      color: rgb(255, 255, 255);
 
         &:hover{
             animation: passhover 1s both;
@@ -36,16 +57,28 @@ html[data-theme="dark"]{
         
     }
 
-      
-    .header{
-      border-bottom: gold;
+    .itens-menu{
+      &.mobile-on{
+        width: 168px;
+        padding: 5px;
+        display: block;
+        top: 70px;
+        right: 0;
+        border: 1px solid rgb(184 138 43);
+        position: absolute;
+        background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
+        box-shadow: 0px 0px 3px 0px;
+        
+        ul, li,a{
+            display: block;
+            color: white;
+        }
+
+        li{
+            padding: 0 0 25px;
+            
+        }
+      }
     }
 
-    .roof{
-      display: block;
-      width: 100%;
-      height: 2px;
-      background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
-      radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
-    }
 }
