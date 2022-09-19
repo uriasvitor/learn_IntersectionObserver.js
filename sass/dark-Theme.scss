@@ -6,9 +6,12 @@ html[data-theme="dark"]{
       background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
     }
 
-    nav{
+    header{
         background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
 
+    }
+    .navbar{
+      outline:  1px solid gold;
     }
 
     .logo-img{
@@ -54,14 +57,6 @@ html[data-theme="dark"]{
         
     }
 
-    .nav-footer{
-      display: block;
-      width: 100%;
-      height: 2px;
-      background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
-      radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
-    }
-
     .itens-menu{
       &.mobile-on{
         width: 168px;
@@ -83,7 +78,7 @@ html[data-theme="dark"]{
             padding: 0 0 25px;
             
         }
-    }
+      }
     }
 
 }

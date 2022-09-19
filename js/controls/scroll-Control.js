@@ -1,4 +1,4 @@
-const navbar = document.querySelector('nav')
+const navbar = document.querySelector('header')
 
 window.onscroll = ()=>{
     if(document.body.scrollTop > 80 || document.documentElement.scrollTop > 80){
