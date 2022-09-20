@@ -61,10 +61,10 @@ html[data-theme=dark] .itens-menu.mobile-on li {
 html[data-theme=dark] .main {
   background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
 }
-html[data-theme=dark] .main .btn-main {
+html[data-theme=dark] .main .btn-layer {
   color: #1c293a;
 }
-html[data-theme=dark] .main .btn-main:hover {
+html[data-theme=dark] .main .btn-layer:hover {
   background-color: gold;
 }
 

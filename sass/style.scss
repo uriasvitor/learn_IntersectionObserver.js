@@ -34,7 +34,7 @@ header{
         background-color: rgba(255, 255, 255, 0.459);
         outline: 2px solid white;
         box-shadow: 0px 0px 3px 0px;;
-        transition: all 1s;
+        transition: all 2s;
     }
 
 }
@@ -212,18 +212,23 @@ header{
 }
 
 .main{
-    height: 550px;
-    border-bottom: 2px solid black;
+    height: 650px;
     background: $bg_main;
+
+    @include small-screen{
+        height: 750px;
+    }
 }
+
 h1.title{
     font-family: 'Raleway', sans-serif;
-    font-size: 54px;
+    font-size: 56px;
     line-height: 10px;
     color: #fff;
 
     @include small-screen{
         line-height: 70px;
+        font-size: 50px;
     }
 }
 
@@ -231,10 +236,10 @@ h1.title{
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
     color: #fff;
-    font-size: 34px;
+    font-size: 38px;
 }
 
-.btn-main{
+.btn-layer{
     margin-top: 50px;
     display: flex;
     justify-content:center;
@@ -254,3 +259,85 @@ h1.title{
       }
 
 }
+
+span.sub-m-01{
+    margin-top: 50px;
+}
+
+.row-info{
+    margin-top: 180px;
+
+    @include small-screen{
+        margin-top: 130px;
+    }
+
+    .sub-m-01{
+        font-size: 30px;
+        font-family: 'Raleway', sans-serif;
+        font-size: 500;
+        color: white;
+    }
+
+    ul,li{
+        display: flex;
+        color: white;
+        font-size: 30px;
+        justify-content: space-between;
+
+        @include small-screen{
+            font-size: 18px;
+            padding: 0;
+        }
+    }
+    ul{
+        margin-top: 30px;
+    }
+
+    li{
+        font-family: 'Raleway', sans-serif;
+        font-size: 500;
+    }
+}
+
+section.layer-01{
+    background: linear-gradient(91.9deg, rgb(93, 248, 219) 27.8%, rgb(33, 228, 246) 67%);
+
+    h1.title-l-01{
+        text-align: center;
+        font-family: 'Raleway', sans-serif;
+        font-size: 54px;
+        line-height: 10px;
+        color: black;
+    
+        @include small-screen{
+            line-height: 70px;
+        }
+    }
+    span.sub-l-01{
+        font-size: 54px;
+        line-height: 10px;
+        font-family: 'Quicksand', sans-serif;
+    }
+    .btn-l-01{
+        margin-top: 50px;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        width: 180px;
+        height: 45px;
+        border-radius: 22px;
+        font-size: 22px;
+        background-color: white;
+        font-weight: 800;
+        color: #5a92e8;
+        font-family: 'Quicksand', sans-serif;
+
+    &:hover{
+        background-color: #5a92e8;
+        color: white;
+      }
+
+    }
+}
+
+
