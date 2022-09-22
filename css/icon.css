@@ -17,7 +17,7 @@
 .logo-img[data-animate=stopped]::before {
   content: "U";
 }
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 860px) {
   .logo-img {
     display: none;
   }
@@ -68,7 +68,7 @@
 .switch-letter.dark .circle {
   margin: 4px;
 }
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 860px) {
   .switch-letter {
     display: none;
     transform: rotate(90deg);
@@ -95,7 +95,7 @@
   width: 55px;
   height: 50px;
 }
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 860px) {
   .img-mobile.light {
     display: block;
   }

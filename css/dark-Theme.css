@@ -16,7 +16,7 @@ html[data-theme=dark] .img-mobile {
   width: 55px;
   height: 50px;
 }
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 860px) {
   html[data-theme=dark] .img-mobile.dark {
     display: block;
   }

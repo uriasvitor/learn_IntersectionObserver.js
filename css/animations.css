@@ -25,4 +25,24 @@
   }
 }
 
+a {
+  animation: tick 2.5s, backwards;
+}
+@keyframes tick {
+  0% {
+    color: rgb(255, 217, 0);
+  }
+  25% {
+    color: white;
+    opacity: 0.5;
+  }
+  50% {
+    color: cornflowerblue;
+    opacity: 1;
+  }
+  100% {
+    color: white;
+  }
+}
+
 /*# sourceMappingURL=animations.css.map */
