@@ -2,10 +2,7 @@
 
 
 html[data-theme="dark"]{
-    
-    body{
-      background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
-    }
+
 
     header{
         background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
@@ -95,6 +92,23 @@ html[data-theme="dark"]{
           background-color: gold;
         }
       }
-      
     }
+
+  .indicator{
+
+      .in-l{
+          width: 50%;
+          height: 100%;
+          clip-path: polygon(0 0, 95% 0, 100% 100%, 0% 100%);
+          background-color: white;
+      }
+
+
+      .in-r{
+          width: 50%;
+          height: 100%;
+          clip-path: polygon(5% 0, 100% 0%, 100% 100%, 0% 100%);
+          background-color: white;
+      }
+  }
 }
