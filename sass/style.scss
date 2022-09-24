@@ -27,6 +27,7 @@ body{
     
 }
 
+
 header{
     width: 100%;
     height: 70px;
@@ -336,6 +337,8 @@ section#layer-01{
 
             @include small-screen{
                 margin-top: 40px;
+                justify-content: center;
+                align-items: center;
             }
         }
         
@@ -398,9 +401,13 @@ section#layer-01{
 
         @include medium-screen{
             margin-top: 0px;
-
+            flex-wrap: wrap;
+            flex-direction: column-reverse;
+            
             @include small-screen{
                 margin-top: 40px;
+                justify-content: center;
+                align-items: center;
             }
         }
         
@@ -458,6 +465,8 @@ section#layer-01{
             }
         }
     }
+
+
 
 }
 

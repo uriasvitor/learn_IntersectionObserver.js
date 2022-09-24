@@ -140,19 +140,29 @@
   align-items: center;
   flex-wrap: nowrap;
   flex-direction: row;
-  border: 4px solid rgb(0, 0, 0);
+  border: 4px solid rgb(255, 255, 255);
   transform: translateY(60px);
-  background: linear-gradient(91.1deg, rgb(57, 31, 105) -2.3%, rgb(115, 43, 155) 44.4%, rgb(231, 75, 184) 103.4%);
+  -webkit-background-clip: text;
+  background: linear-gradient(91.1deg, rgb(0, 196, 250) -2.3%, rgb(27, 67, 60) 44.4%, rgb(34, 0, 24) 103.4%);
 }
 .info-box .innerbox .info-box-i {
   width: 150px;
   height: 75px;
   background: black;
+  border-radius: 20px;
 }
 .info-box .innerbox .info-box-i .ibi-logo {
   background: black;
   color: white;
   text-align: center;
+}
+.info-box .innerbox .info-box-t .ibt-title {
+  background-color: black;
+  background: linear-gradient(265.58deg, #e723ff -35.89%, #ffffff 96.06%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=icon.css.map */

@@ -1,3 +1,5 @@
+@import "./beakpoints/breakpoints.scss";
+
 .switch-letter{
     
     animation: switchLetter 2s, infinite;
@@ -56,4 +58,73 @@ a{
             color: white; 
         }
     }
+}
+
+section.hidden{
+    opacity: 0;
+    transition: all 2s;
+}
+
+section.show{
+    opacity: 1;
+    transition: all 2s;
+}
+
+.content-l-01{
+
+    &.hidden{
+        opacity: 0;
+        transform: translateX(15px);
+        
+        @include medium-screen{
+            transform: translateX(0px);
+        }
+    }
+
+    &.show{
+        opacity: 1;
+        transform: translateX(0px);
+        transition: all 1.5s;
+
+        @include medium-screen{
+            transform: translateX(0px);
+        }
+
+    }
+}
+
+.content-l-02{
+    &.hidden{
+        opacity: 0;
+        transform: translateX(15px);
+
+        @include medium-screen{
+            transform: translateX(0px);
+        }
+    }
+
+    &.show{
+        opacity: 1;
+        transform: translateX(0px);
+        transition: all 1.5s;
+
+        @include medium-screen{
+            transform: translateX(0px);
+        }
+    }
+}
+
+
+.info-box{
+
+    &.hidden{
+        opacity: 0;
+        transition: all 1s;
+    }
+
+    &.show{
+        opacity: 1;
+        transition: all 1.5s;
+    }
+
 }

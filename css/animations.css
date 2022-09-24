@@ -45,4 +45,63 @@ a {
   }
 }
 
+section.hidden {
+  opacity: 0;
+  transition: all 2s;
+}
+
+section.show {
+  opacity: 1;
+  transition: all 2s;
+}
+
+.content-l-01.hidden {
+  opacity: 0;
+  transform: translateX(15px);
+}
+@media screen and (max-width: 1200px) {
+  .content-l-01.hidden {
+    transform: translateX(0px);
+  }
+}
+.content-l-01.show {
+  opacity: 1;
+  transform: translateX(0px);
+  transition: all 1.5s;
+}
+@media screen and (max-width: 1200px) {
+  .content-l-01.show {
+    transform: translateX(0px);
+  }
+}
+
+.content-l-02.hidden {
+  opacity: 0;
+  transform: translateX(15px);
+}
+@media screen and (max-width: 1200px) {
+  .content-l-02.hidden {
+    transform: translateX(0px);
+  }
+}
+.content-l-02.show {
+  opacity: 1;
+  transform: translateX(0px);
+  transition: all 1.5s;
+}
+@media screen and (max-width: 1200px) {
+  .content-l-02.show {
+    transform: translateX(0px);
+  }
+}
+
+.info-box.hidden {
+  opacity: 0;
+  transition: all 1s;
+}
+.info-box.show {
+  opacity: 1;
+  transition: all 1.5s;
+}
+
 /*# sourceMappingURL=animations.css.map */

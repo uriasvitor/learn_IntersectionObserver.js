@@ -310,6 +310,8 @@ section#layer-01 .content-l-01 {
 @media screen and (max-width: 1200px) and (max-width: 860px) {
   section#layer-01 .content-l-01 {
     margin-top: 40px;
+    justify-content: center;
+    align-items: center;
   }
 }
 section#layer-01 h1.title-l-01 {
@@ -369,11 +371,15 @@ section#layer-01 .content-l-02 {
 @media screen and (max-width: 1200px) {
   section#layer-01 .content-l-02 {
     margin-top: 0px;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
   }
 }
 @media screen and (max-width: 1200px) and (max-width: 860px) {
   section#layer-01 .content-l-02 {
     margin-top: 40px;
+    justify-content: center;
+    align-items: center;
   }
 }
 section#layer-01 h1.title-l-02 {
