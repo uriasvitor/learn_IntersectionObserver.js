@@ -165,15 +165,19 @@
         background: linear-gradient(91.1deg, rgb(0 196 250) -2.3%, rgb(27 67 60) 44.4%, rgb(34 0 24) 103.4%);
         
         .info-box-i{
+            display: flex;
+            justify-content: center;
             width: 150px;
             height: 75px;
             background: black;
             border-radius: 20px;
 
             .ibi-logo{
-                background: black;
-                color: white;
-                text-align: center;
+                width: 45px;
+                height: 60px;
+                background-color: #0996b7;
+                clip-path: polygon(50% 50%, 0 0, 100% 0);
+
             }
         }
 
@@ -192,4 +196,6 @@
 
 
 }
+
+
 

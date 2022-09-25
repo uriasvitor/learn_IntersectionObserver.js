@@ -45,63 +45,89 @@ a {
   }
 }
 
-section.hidden {
-  opacity: 0;
-  transition: all 2s;
-}
-
-section.show {
-  opacity: 1;
-  transition: all 2s;
-}
-
-.content-l-01.hidden {
+.content-l-01.hi {
   opacity: 0;
   transform: translateX(15px);
 }
 @media screen and (max-width: 1200px) {
-  .content-l-01.hidden {
+  .content-l-01.hi {
     transform: translateX(0px);
   }
 }
-.content-l-01.show {
+.content-l-01.sh {
   opacity: 1;
   transform: translateX(0px);
   transition: all 1.5s;
 }
 @media screen and (max-width: 1200px) {
-  .content-l-01.show {
+  .content-l-01.sh {
     transform: translateX(0px);
   }
 }
 
-.content-l-02.hidden {
+.content-l-02.hi {
   opacity: 0;
   transform: translateX(15px);
 }
 @media screen and (max-width: 1200px) {
-  .content-l-02.hidden {
+  .content-l-02.hi {
     transform: translateX(0px);
   }
 }
-.content-l-02.show {
+.content-l-02.sh {
   opacity: 1;
   transform: translateX(0px);
   transition: all 1.5s;
 }
 @media screen and (max-width: 1200px) {
-  .content-l-02.show {
+  .content-l-02.sh {
     transform: translateX(0px);
   }
 }
 
-.info-box.hidden {
+.info-box.hi {
   opacity: 0;
   transition: all 1s;
 }
-.info-box.show {
+.info-box.sh {
   opacity: 1;
   transition: all 1.5s;
+}
+
+.v-left .v-t-l-01.hi, .v-left .v-t-l-02.hi {
+  opacity: 0;
+  transform: translateY(83px);
+}
+.v-left .v-t-l-01.sh, .v-left .v-t-l-02.sh {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: all 1s;
+}
+.v-left .v-t-l-01 p.hi, .v-left .v-t-l-01 h1.hi, .v-left .v-t-l-02 p.hi, .v-left .v-t-l-02 h1.hi {
+  opacity: 0;
+  transform: translateY(83px);
+}
+.v-left .v-t-l-01 p.sh, .v-left .v-t-l-01 h1.sh, .v-left .v-t-l-02 p.sh, .v-left .v-t-l-02 h1.sh {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.v-right .v-t-r-01.hi, .v-right .v-t-r-02.hi {
+  opacity: 0;
+  transform: translateY(83px);
+}
+.v-right .v-t-r-01.sh, .v-right .v-t-r-02.sh {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: all 1s;
+}
+.v-right .v-t-r-01 p.hi, .v-right .v-t-r-01 h1.hi, .v-right .v-t-r-02 p.hi, .v-right .v-t-r-02 h1.hi {
+  opacity: 0;
+  transform: translateY(83px);
+}
+.v-right .v-t-r-01 p.sh, .v-right .v-t-r-01 h1.sh, .v-right .v-t-r-02 p.sh, .v-right .v-t-r-02 h1.sh {
+  opacity: 1;
+  transform: translateY(0px);
 }
 
 /*# sourceMappingURL=animations.css.map */
