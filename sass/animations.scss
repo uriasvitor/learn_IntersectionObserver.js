@@ -93,7 +93,7 @@ section.sh{
     }
 }
 
-.content-l-02{
+.content-l-01r{
     &.hi{
         opacity: 0;
         transform: translateX(15px);
@@ -130,11 +130,11 @@ section.sh{
 }
 
 .v-left{    
-    .v-t-l-01,.v-t-l-02{
+    .v-t-l-01,.v-t-l-01r{
         &.hi{
             opacity: 0;
             transform: translateY(83px);
-
+            
         }
 
         &.sh{
@@ -151,7 +151,7 @@ section.sh{
         p.sh,h1.sh{
             opacity: 1;
             transform: translateY(0px);
-            
+            transition: all 1s;
         }
 
     }
@@ -180,10 +180,21 @@ section.sh{
         p.sh,h1.sh{
             opacity: 1;
             transform: translateY(0px);
-            
+            transition: all 1s;
         }
     }
 }
 
+.title-l-02{
 
+    &.hi{
+        opacity: 0;
+        transition: all 1s;
+    }
+
+    &.sh{
+        opacity: 1;
+        transition: all 2s;
+    }
+}
 

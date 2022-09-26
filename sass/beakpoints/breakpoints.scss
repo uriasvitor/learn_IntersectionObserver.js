@@ -10,6 +10,8 @@ $background_dark: light;
 $background_light:dark;
 $bg_main:radial-gradient(circle at 12.3% 19.3%, rgb(85, 88, 218) -59%, rgb(95, 209, 249) 100.2%);
 $bg_section02:white;
+$s02_p:linear-gradient(27deg, #ff00b1 -35.89%, #ffffff 96.06%);;
+$s02_h:linear-gradient(27deg, #ff00b1 -35.89%, #89e2ff 96.06%);
 
 @mixin small-screen {
     @media screen and (max-width: (($small)+"px")) {

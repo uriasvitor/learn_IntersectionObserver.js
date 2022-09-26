@@ -362,27 +362,27 @@ section#layer-01 .video {
     width: 90vw;
   }
 }
-section#layer-01 .content-l-02 {
+section#layer-01 .content-l-01r {
   margin-top: 200px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
 }
 @media screen and (max-width: 1200px) {
-  section#layer-01 .content-l-02 {
+  section#layer-01 .content-l-01r {
     margin-top: 0px;
     flex-wrap: wrap;
     flex-direction: column-reverse;
   }
 }
 @media screen and (max-width: 1200px) and (max-width: 860px) {
-  section#layer-01 .content-l-02 {
+  section#layer-01 .content-l-01r {
     margin-top: 40px;
     justify-content: center;
     align-items: center;
   }
 }
-section#layer-01 h1.title-l-02 {
+section#layer-01 h1.title-l-01r {
   text-align: center;
   font-family: "Montserrat", sans-serif;
   font-size: 54px;
@@ -391,30 +391,30 @@ section#layer-01 h1.title-l-02 {
   background-color: red;
 }
 @media screen and (max-width: 860px) {
-  section#layer-01 h1.title-l-02 {
+  section#layer-01 h1.title-l-01r {
     line-height: 70px;
     font-size: 34px;
   }
 }
-section#layer-01 .sub-l-02 {
+section#layer-01 .sub-l-01r {
   font-size: 54px;
   margin-top: 40px;
   font-weight: 600;
   font-family: "Quicksand", sans-serif;
 }
-section#layer-01 .box-l-02 {
+section#layer-01 .box-l-01r {
   width: 650px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
 @media screen and (max-width: 1200px) {
-  section#layer-01 .box-l-02 {
+  section#layer-01 .box-l-01r {
     margin-bottom: 20px;
   }
 }
 @media screen and (max-width: 1200px) and (max-width: 860px) {
-  section#layer-01 .box-l-02 {
+  section#layer-01 .box-l-01r {
     width: 92vw;
     margin-bottom: 20px;
   }
@@ -438,10 +438,10 @@ section#layer-01 .video-2 {
 section#layer-02 {
   background-color: black;
 }
-section#layer-02 .content-l-03 {
+section#layer-02 .content-l-02 {
   margin-top: 100px;
 }
-section#layer-02 .content-l-03 .box-t-03 .title-l-03 {
+section#layer-02 .content-l-02 .box-t-02 .title-l-02 {
   display: flex;
   color: white;
   justify-content: center;
@@ -450,58 +450,94 @@ section#layer-02 .content-l-03 .box-t-03 .title-l-03 {
   font-weight: 600;
   font-family: "Quicksand", sans-serif;
 }
-section#layer-02 .content-l-03 .box-t-03 .vertical-line {
+section#layer-02 .content-l-02 .box-t-02 .vertical-line {
   display: flex;
   height: 2500px;
 }
-section#layer-02 .content-l-03 .box-t-03 .vertical-line .box-block {
+section#layer-02 .content-l-02 .box-t-02 .vertical-line .box-block {
   width: 100%;
   height: 60vh;
 }
-section#layer-02 .content-l-03 .box-t-03 .vertical-line .v-left, section#layer-02 .content-l-03 .box-t-03 .vertical-line .v-right {
+section#layer-02 .content-l-02 .box-t-02 .vertical-line .v-left, section#layer-02 .content-l-02 .box-t-02 .vertical-line .v-right {
   width: 50%;
-  background: linear-gradient(265.58deg, #e723ff -35.89%, #ffffff 96.06%);
+  background: linear-gradient(27deg, #ff00b1 -35.89%, #89e2ff 96.06%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-section#layer-02 .content-l-03 .box-t-03 .vertical-line .v-left h1, section#layer-02 .content-l-03 .box-t-03 .vertical-line .v-right h1 {
+section#layer-02 .content-l-02 .box-t-02 .vertical-line .v-left h1, section#layer-02 .content-l-02 .box-t-02 .vertical-line .v-right h1 {
   font-size: 40px;
-  background: linear-gradient(265.58deg, #e723ff -35.89%, #ffffff 96.06%);
+  background: linear-gradient(27deg, #ff00b1 -35.89%, #89e2ff 96.06%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: "Raleway", sans-serif;
   font-weight: bold;
 }
-section#layer-02 .content-l-03 .box-t-03 .vertical-line .v-left p, section#layer-02 .content-l-03 .box-t-03 .vertical-line .v-right p {
+section#layer-02 .content-l-02 .box-t-02 .vertical-line .v-left p, section#layer-02 .content-l-02 .box-t-02 .vertical-line .v-right p {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
-  font-size: 20px;
-  background: linear-gradient(265.58deg, #e723ff -35.89%, #ffffff 96.06%);
+  font-size: 22px;
+  background: linear-gradient(27deg, #ff00b1 -35.89%, #ffffff 96.06%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-section#layer-02 .content-l-03 .box-t-03 .vertical-line .v-right {
+section#layer-02 .content-l-02 .box-t-02 .vertical-line .v-right {
   margin: 2px;
 }
-section#layer-02 .content-l-03 .box-t-03 .vertical-line .v-right .box-b-r {
+section#layer-02 .content-l-02 .box-t-02 .vertical-line .v-right .box-b-r {
   width: 50%;
   height: 60vh;
 }
-section#layer-02 .content-l-03 .box-t-03 .vertical-line .v-right .box-b-r-01 {
+section#layer-02 .content-l-02 .box-t-02 .vertical-line .v-right .box-b-r-01 {
   width: 50%;
   height: 70vh;
 }
-section#layer-02 .content-l-03 .box-t-03 .vertical-line .v-left {
-  border-right: 5px dotted #0f62ff;
+section#layer-02 .content-l-02 .box-t-02 .vertical-line .v-left {
+  border-right: 5px dotted #ff00b1;
   margin: 0 30px;
 }
-section#layer-02 .content-l-03 .box-t-03 .vertical-line .v-left .box-b-l {
+section#layer-02 .content-l-02 .box-t-02 .vertical-line .v-left .box-b-l {
   width: 50%;
   height: 90vh;
 }
-section#layer-02 .content-l-03 .box-t-03 .vertical-line .v-left .box-b-l-01 {
+section#layer-02 .content-l-02 .box-t-02 .vertical-line .v-left .box-b-l-01 {
   width: 50%;
   height: 60vh;
+}
+
+section#layer-03 {
+  height: 1000px;
+  background-color: black;
+}
+section#layer-03 .content-l-03 {
+  margin-top: 40px;
+}
+section#layer-03 .content-l-03 .title-l-03 {
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-family: "Quicksand", sans-serif;
+  font-size: 40px;
+}
+section#layer-03 .content-l-03 .box-cards {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  color: white;
+}
+section#layer-03 .content-l-03 .box-cards .card-01, section#layer-03 .content-l-03 .box-cards .card-02, section#layer-03 .content-l-03 .box-cards .card-03, section#layer-03 .content-l-03 .box-cards .card-04 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  outline: 1px solid red;
+  width: 20%;
+  margin-left: 60px;
+}
+section#layer-03 .content-l-03 .box-cards .card-01 {
+  outline: 1px solid red;
 }
 
 /*# sourceMappingURL=style.css.map */

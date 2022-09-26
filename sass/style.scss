@@ -393,7 +393,7 @@ section#layer-01{
         }
     }
 
-    .content-l-02{
+    .content-l-01r{
         margin-top: 200px;
         display: flex;
         flex-wrap: wrap;
@@ -413,7 +413,7 @@ section#layer-01{
         
     }
 
-    h1.title-l-02{
+    h1.title-l-01r{
         text-align: center;
         font-family: 'Montserrat', sans-serif;
         font-size: 54px;
@@ -428,14 +428,14 @@ section#layer-01{
         }
     }
 
-    .sub-l-02{
+    .sub-l-01r{
         font-size: 54px;
         margin-top: 40px;
         font-weight: 600;
         font-family: 'Quicksand', sans-serif;
     }
 
-    .box-l-02{
+    .box-l-01r{
         width: 650px;
         display: flex;
         flex-direction: column;
@@ -473,17 +473,16 @@ section#layer-01{
 section#layer-02{
     background-color: black;
 
-    .content-l-03{
+    .content-l-02{
         margin-top: 100px;
 
-        .box-t-03{
-            .title-l-03{
+        .box-t-02{
+            .title-l-02{
                 display: flex;
                 color: white;
                 justify-content: center;
                 align-items: center;
-
-                font-size: 52px;
+                font-size: 52px;    
                 font-weight: 600;
                 font-family: 'Quicksand', sans-serif;
             }
@@ -499,13 +498,13 @@ section#layer-02{
 
                 .v-left,.v-right{
                     width: 50%;
-                    background: linear-gradient(265.58deg, #e723ff -35.89%, #ffffff 96.06%);
+                    background: $s02_h;
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
 
                     h1{
                         font-size: 40px;
-                        background: linear-gradient(265.58deg, #e723ff -35.89%, #ffffff 96.06%);
+                        background: $s02_h;
                         -webkit-background-clip: text;
                         -webkit-text-fill-color: transparent;
                         font-family: 'Raleway', sans-serif;
@@ -515,8 +514,8 @@ section#layer-02{
                     p{
                         font-family: 'Raleway', sans-serif;
                         font-weight: 600;
-                        font-size: 20px;
-                        background: linear-gradient(265.58deg, #e723ff -35.89%, #ffffff 96.06%);
+                        font-size: 22px;
+                        background: $s02_p;
                         -webkit-background-clip: text;
                         -webkit-text-fill-color: transparent;
                     }
@@ -537,7 +536,7 @@ section#layer-02{
                 }
 
                 .v-left{
-                    border-right: 5px dotted #0f62ff;
+                    border-right: 5px dotted #ff00b1;
                     margin: 0 30px;
                     
                     .box-b-l{
@@ -551,13 +550,52 @@ section#layer-02{
                     }
 
                 }
-
             }
         }
 
-
-
     }
 
+
+}
+
+section#layer-03{
+    height: 1000px;
+    background-color: black;
+    
+    .content-l-03{
+        margin-top: 40px;
+
+        .title-l-03{
+            display: flex;
+            color: white;
+            justify-content: center;
+            align-items: center;
+            font-weight: 600;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 40px;
+        }
+
+        .box-cards{
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: flex-start;
+            
+            color: white ;
+
+            .card-01,.card-02,.card-03,.card-04{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                outline: 1px solid red;
+                width: 20%;
+                margin-left: 60px;
+            }
+            .card-01{
+                outline: 1px solid red;
+            }
+        }
+    }
 
 }

@@ -133,7 +133,7 @@
   transform: translateY(0px);
 }
 .info-box .innerbox {
-  width: 600px;
+  width: 40%;
   height: 100px;
   display: inline-flex;
   justify-content: space-around;
@@ -145,13 +145,26 @@
   -webkit-background-clip: text;
   background: linear-gradient(91.1deg, rgb(0, 196, 250) -2.3%, rgb(27, 67, 60) 44.4%, rgb(34, 0, 24) 103.4%);
 }
+@media screen and (max-width: 860px) {
+  .info-box .innerbox {
+    width: 80%;
+    height: 100%;
+  }
+}
 .info-box .innerbox .info-box-i {
   display: flex;
   justify-content: center;
-  width: 150px;
-  height: 75px;
-  background: black;
+  width: 20%;
+  height: 65px;
+  background: white;
   border-radius: 20px;
+  margin: 10px;
+}
+@media screen and (max-width: 1200px) {
+  .info-box .innerbox .info-box-i {
+    width: 26%;
+    height: 60px;
+  }
 }
 .info-box .innerbox .info-box-i .ibi-logo {
   width: 45px;
@@ -159,13 +172,25 @@
   background-color: #0996b7;
   clip-path: polygon(50% 50%, 0 0, 100% 0);
 }
+@media screen and (max-width: 860px) {
+  .info-box .innerbox .info-box-i .ibi-logo {
+    width: 25px;
+    height: 35px;
+  }
+}
 .info-box .innerbox .info-box-t .ibt-title {
   background-color: black;
+  padding: 10px;
   background: linear-gradient(265.58deg, #e723ff -35.89%, #ffffff 96.06%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: "Raleway", sans-serif;
   font-weight: bold;
+}
+@media screen and (max-width: 860px) {
+  .info-box .innerbox .info-box-t {
+    font-size: 12px;
+  }
 }
 
 /*# sourceMappingURL=icon.css.map */
