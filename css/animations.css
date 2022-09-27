@@ -141,4 +141,67 @@ a {
   transition: all 2s;
 }
 
+.title-l-03.hi {
+  opacity: 0;
+  transform: translateY(83px);
+}
+.title-l-03.sh {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: all 2s;
+}
+
+.box-cards .card-01.hi {
+  opacity: 0;
+  transform: translateY(183px);
+}
+.box-cards .card-01.sh {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: all 1.5s;
+}
+.box-cards .card-01.sh:hover {
+  transform: translateY(30px);
+  transition: all 1s;
+}
+.box-cards .card-02.hi {
+  opacity: 0;
+  transform: translateY(183px);
+}
+.box-cards .card-02.sh {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: all 2s;
+}
+.box-cards .card-02.sh:hover {
+  transform: translateY(30px);
+  transition: all 1s;
+}
+.box-cards .card-03.hi {
+  opacity: 0;
+  transform: translateY(183px);
+}
+.box-cards .card-03.sh {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: all 3s;
+}
+.box-cards .card-03.sh:hover {
+  transform: translateY(30px);
+  transition: all 1s;
+}
+.box-cards .card-04.hi {
+  opacity: 0;
+  transform: translateY(185px);
+}
+.box-cards .card-04.sh {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: all 3.5s;
+}
+.box-cards .card-04.sh:hover {
+  transform: translateY(30px);
+  transition: all 1s;
+}
+
 /*# sourceMappingURL=animations.css.map */

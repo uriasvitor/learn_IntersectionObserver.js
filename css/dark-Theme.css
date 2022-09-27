@@ -1,5 +1,8 @@
+html[data-theme=dark] body {
+  background: rgb(247, 112, 15);
+}
 html[data-theme=dark] header {
-  background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
+  background: #030000;
 }
 html[data-theme=dark] header.scrolled {
   transition: all 1s;
@@ -56,7 +59,7 @@ html[data-theme=dark] .itens-menu.mobile-on li {
   padding: 0 0 25px;
 }
 html[data-theme=dark] .main {
-  background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
+  background: black;
 }
 html[data-theme=dark] .main .btn-layer {
   color: #1c293a;
@@ -68,13 +71,48 @@ html[data-theme=dark] .indicator .in-l {
   width: 50%;
   height: 100%;
   clip-path: polygon(0 0, 95% 0, 100% 100%, 0% 100%);
-  background-color: white;
+  background-color: rgb(247, 112, 15);
 }
 html[data-theme=dark] .indicator .in-r {
   width: 50%;
   height: 100%;
   clip-path: polygon(5% 0, 100% 0%, 100% 100%, 0% 100%);
-  background-color: white;
+  background-color: rgb(247, 112, 15);
+}
+html[data-theme=dark] section#layer-01 {
+  background: rgb(247, 112, 15);
+}
+html[data-theme=dark] section#layer-01 .sub-l-01, html[data-theme=dark] section#layer-01 .sub-l-01r {
+  color: white;
+}
+html[data-theme=dark] section#layer-01 h1.title-l-01r, html[data-theme=dark] section#layer-01 h1.title-l-01 {
+  background-color: black;
+}
+html[data-theme=dark] section#layer-02 {
+  background: #000;
+}
+html[data-theme=dark] section#layer-02 .box-t-02 .title-l-02 {
+  background: linear-gradient(110.4deg, rgb(247, 112, 15) 6.4%, rgb(248, 50, 88) 100.2%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+html[data-theme=dark] section#layer-02 .box-t-02 .vertical-line .v-left {
+  border-right: 5px dotted rgb(247, 112, 15);
+}
+html[data-theme=dark] section#layer-02 .box-t-02 .vertical-line .v-left h1, html[data-theme=dark] section#layer-02 .box-t-02 .vertical-line .v-right h1 {
+  background: linear-gradient(110.4deg, rgb(247, 112, 15) 6.4%, rgb(248, 50, 88) 100.2%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+html[data-theme=dark] section#layer-02 .box-t-02 .vertical-line .v-left p, html[data-theme=dark] section#layer-02 .box-t-02 .vertical-line .v-right p {
+  background: linear-gradient(110.4deg, rgb(247, 112, 15) 6.4%, rgb(248, 50, 88) 100.2%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+html[data-theme=dark] section#layer-02 #layer-03 .content .content-l-03 .box-l-03 .title-l-03 {
+  background: linear-gradient(110.4deg, rgb(247, 112, 15) 6.4%, rgb(248, 50, 88) 100.2%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /*# sourceMappingURL=dark-Theme.css.map */

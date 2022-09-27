@@ -16,7 +16,7 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 2000px;
+  height: 100%;
   background: white;
 }
 
@@ -436,7 +436,7 @@ section#layer-01 .video-2 {
 }
 
 section#layer-02 {
-  background-color: black;
+  background: radial-gradient(circle at 12.3% 19.3%, rgb(85, 88, 218) -59%, rgb(95, 209, 249) 100.2%);
 }
 section#layer-02 .content-l-02 {
   margin-top: 100px;
@@ -460,13 +460,13 @@ section#layer-02 .content-l-02 .box-t-02 .vertical-line .box-block {
 }
 section#layer-02 .content-l-02 .box-t-02 .vertical-line .v-left, section#layer-02 .content-l-02 .box-t-02 .vertical-line .v-right {
   width: 50%;
-  background: linear-gradient(27deg, #ff00b1 -35.89%, #89e2ff 96.06%);
+  background: #fff;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 section#layer-02 .content-l-02 .box-t-02 .vertical-line .v-left h1, section#layer-02 .content-l-02 .box-t-02 .vertical-line .v-right h1 {
   font-size: 40px;
-  background: linear-gradient(27deg, #ff00b1 -35.89%, #89e2ff 96.06%);
+  background: #fff;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: "Raleway", sans-serif;
@@ -476,7 +476,7 @@ section#layer-02 .content-l-02 .box-t-02 .vertical-line .v-left p, section#layer
   font-family: "Raleway", sans-serif;
   font-weight: 600;
   font-size: 22px;
-  background: linear-gradient(27deg, #ff00b1 -35.89%, #ffffff 96.06%);
+  background: #fff;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -492,7 +492,7 @@ section#layer-02 .content-l-02 .box-t-02 .vertical-line .v-right .box-b-r-01 {
   height: 70vh;
 }
 section#layer-02 .content-l-02 .box-t-02 .vertical-line .v-left {
-  border-right: 5px dotted #ff00b1;
+  border-right: 5px dotted #fff;
   margin: 0 30px;
 }
 section#layer-02 .content-l-02 .box-t-02 .vertical-line .v-left .box-b-l {
@@ -504,40 +504,64 @@ section#layer-02 .content-l-02 .box-t-02 .vertical-line .v-left .box-b-l-01 {
   height: 60vh;
 }
 
-section#layer-03 {
+div#layer-03 {
   height: 1000px;
-  background-color: black;
 }
-section#layer-03 .content-l-03 {
+div#layer-03 .content-l-03 {
   margin-top: 40px;
 }
-section#layer-03 .content-l-03 .title-l-03 {
+div#layer-03 .content-l-03 .title-l-03 {
   display: flex;
-  color: white;
+  color: #fff;
   justify-content: center;
   align-items: center;
   font-weight: 600;
   font-family: "Quicksand", sans-serif;
   font-size: 40px;
 }
-section#layer-03 .content-l-03 .box-cards {
+div#layer-03 .content-l-03 .box-cards {
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: flex-start;
+  margin-top: 180px;
+  height: 500px;
   color: white;
 }
-section#layer-03 .content-l-03 .box-cards .card-01, section#layer-03 .content-l-03 .box-cards .card-02, section#layer-03 .content-l-03 .box-cards .card-03, section#layer-03 .content-l-03 .box-cards .card-04 {
+div#layer-03 .content-l-03 .box-cards .card-01, div#layer-03 .content-l-03 .box-cards .card-02, div#layer-03 .content-l-03 .box-cards .card-03, div#layer-03 .content-l-03 .box-cards .card-04 {
   display: flex;
+  height: 80%;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  outline: 1px solid red;
+  border-radius: 0 20px;
   width: 20%;
   margin-left: 60px;
 }
-section#layer-03 .content-l-03 .box-cards .card-01 {
-  outline: 1px solid red;
+div#layer-03 .content-l-03 .box-cards .card-01 h1, div#layer-03 .content-l-03 .box-cards .card-02 h1, div#layer-03 .content-l-03 .box-cards .card-03 h1, div#layer-03 .content-l-03 .box-cards .card-04 h1 {
+  font-size: 32px;
+  font-family: "Quicksand";
+}
+div#layer-03 .content-l-03 .box-cards .card-01 p, div#layer-03 .content-l-03 .box-cards .card-02 p, div#layer-03 .content-l-03 .box-cards .card-03 p, div#layer-03 .content-l-03 .box-cards .card-04 p {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+}
+div#layer-03 .content-l-03 .box-cards .card-01 {
+  background: linear-gradient(45deg, #0d0d54, #ff0091);
+  box-shadow: 0 0 6px 4px #fff, 0 0 10px 0px #0d0d54, 0 0 10px 8px #ff0091;
+}
+div#layer-03 .content-l-03 .box-cards .card-02 {
+  background: linear-gradient(45deg, #0000ff, cyan);
+  box-shadow: 0 0 6px 4px #fff, 0 0 10px 0px #0000ff, 0 0 10px 8px #00ffff;
+}
+div#layer-03 .content-l-03 .box-cards .card-03 {
+  background: linear-gradient(327deg, #020202, #00ff5a);
+  box-shadow: 0 0 6px 4px #fff, 0 0 10px 0px #00ff5a, 0 0 14px 8px rgba(12, 255, 0, 0.7411764706);
+}
+div#layer-03 .content-l-03 .box-cards .card-04 {
+  background: linear-gradient(223deg, #ff0000, #ffe700);
+  box-shadow: 0 0 6px 4px #fff, 0 0 10px 0px #ff0000, 0 0 14px 8px #ffe700;
 }
 
 /*# sourceMappingURL=style.css.map */
