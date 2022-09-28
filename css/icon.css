@@ -193,4 +193,75 @@
   }
 }
 
+.info-box-02 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  transform: translateY(0px);
+}
+.info-box-02 .innerbox-02 {
+  width: 30%;
+  height: 100px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  border: 4px solid rgb(255, 255, 255);
+  transform: translateY(60px);
+  -webkit-background-clip: text;
+  background: linear-gradient(91.1deg, rgb(0, 0, 0) -2.3%, rgb(0, 0, 0) 44.4%, rgb(34, 0, 24) 103.4%);
+}
+@media screen and (max-width: 860px) {
+  .info-box-02 .innerbox-02 {
+    width: 80%;
+    height: 100%;
+  }
+}
+.info-box-02 .innerbox-02 .info-box-i-02 {
+  display: flex;
+  justify-content: center;
+  width: 20%;
+  height: 65px;
+  background: white;
+  border-radius: 20px;
+  margin: 10px;
+}
+@media screen and (max-width: 1200px) {
+  .info-box-02 .innerbox-02 .info-box-i-02 {
+    width: 26%;
+    height: 60px;
+  }
+}
+.info-box-02 .innerbox-02 .info-box-i-02 .ibi-logo-02 {
+  width: 45px;
+  height: 60px;
+  font-size: 32px;
+  background-color: #0996b7;
+  clip-path: polygon(50% 50%, 0 0, 100% 0);
+}
+@media screen and (max-width: 860px) {
+  .info-box-02 .innerbox-02 .info-box-i-02 .ibi-logo-02 {
+    width: 25px;
+    height: 35px;
+  }
+}
+.info-box-02 .innerbox-02 .info-box-t-02 .ibt-title-02 {
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  font-size: 23px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+@media screen and (max-width: 860px) {
+  .info-box-02 .innerbox-02 .info-box-t-02 {
+    font-size: 12px;
+  }
+}
+
 /*# sourceMappingURL=icon.css.map */

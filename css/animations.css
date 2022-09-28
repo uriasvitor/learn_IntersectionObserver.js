@@ -204,4 +204,22 @@ a {
   transition: all 1s;
 }
 
+.title-contact.hi {
+  opacity: 0;
+  transition: all 1s;
+}
+.title-contact.sh {
+  opacity: 1;
+  transition: all 2s;
+}
+
+.info-box-02.hi {
+  opacity: 0;
+  transition: all 1s;
+}
+.info-box-02.sh {
+  opacity: 1;
+  transition: all 2s;
+}
+
 /*# sourceMappingURL=animations.css.map */

@@ -187,6 +187,7 @@ section.sh{
 
 .title-l-02{
 
+    
     &.hi{
         opacity: 0;
         transition: all 1s;
@@ -213,6 +214,7 @@ section.sh{
 }
 
 .box-cards{
+    
     .card-01{
 
         &.hi{
@@ -288,5 +290,30 @@ section.sh{
             }
         }
     }
+
 }
 
+.title-contact{
+    &.hi{
+        opacity: 0;
+        transition: all 1s;
+    }
+
+    &.sh{
+        opacity: 1;
+        transition: all 2s;
+    }
+}
+
+.info-box-02{
+    
+    &.hi{
+        opacity: 0;
+        transition: all 1s;
+    }
+
+    &.sh{
+        opacity: 1;
+        transition: all 2s;
+    }
+}
