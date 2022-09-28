@@ -143,7 +143,7 @@
   border: 4px solid rgb(255, 255, 255);
   transform: translateY(60px);
   -webkit-background-clip: text;
-  background: linear-gradient(91.1deg, rgb(0, 196, 250) -2.3%, rgb(27, 67, 60) 44.4%, rgb(34, 0, 24) 103.4%);
+  background: linear-gradient(0.1deg, rgb(0, 203, 255) 10.7%, rgb(255, 255, 255) 100.4%, rgb(255, 255, 255) 143.4%);
 }
 @media screen and (max-width: 860px) {
   .info-box .innerbox {
@@ -179,9 +179,9 @@
   }
 }
 .info-box .innerbox .info-box-t .ibt-title {
-  background-color: black;
+  color: aliceblue;
   padding: 10px;
-  background: linear-gradient(265.58deg, #e723ff -35.89%, #ffffff 96.06%);
+  background: linear-gradient(265.58deg, #000000 -35.89%, #000000 96.06%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: "Raleway", sans-serif;
@@ -212,8 +212,6 @@
   flex-direction: row;
   border: 4px solid rgb(255, 255, 255);
   transform: translateY(60px);
-  -webkit-background-clip: text;
-  background: linear-gradient(91.1deg, rgb(0, 0, 0) -2.3%, rgb(0, 0, 0) 44.4%, rgb(34, 0, 24) 103.4%);
 }
 @media screen and (max-width: 860px) {
   .info-box-02 .innerbox-02 {
@@ -252,7 +250,7 @@
 .info-box-02 .innerbox-02 .info-box-t-02 .ibt-title-02 {
   background-color: rgb(255, 255, 255);
   padding: 10px;
-  font-size: 23px;
+  font-size: 35px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: "Raleway", sans-serif;
