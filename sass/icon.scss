@@ -132,6 +132,11 @@
         height: 100%;
         clip-path: polygon(0 0, 95% 0, 101% 100%, 0% 100%);
         background-color: rgb(255, 255, 255);
+        
+
+        @include small-screen{
+            clip-path: polygon(0 0, 84% 0, 101% 100%, 0% 100%);
+        }
     }
 
     .in-r{
@@ -139,6 +144,10 @@
         height: 100%;
         clip-path: polygon(5% 0, 100% 0%, 100% 100%, -1% 100%);
         background-color: rgb(255, 255, 255);
+
+            @include small-screen{
+                clip-path: polygon(13% 0, 100% 0%, 100% 100%, -1% 100%);
+            }
     }
 }
 
@@ -278,10 +287,12 @@
                 -webkit-text-fill-color: transparent;
                 font-family: 'Raleway', sans-serif;
                 font-weight: bold;
+
+                @include small-screen{
+                    font-size: 26px;
+                }
             }
-            @include small-screen{
-                font-size: 12px;
-            }
+            
         }
     }
 }

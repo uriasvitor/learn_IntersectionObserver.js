@@ -78,13 +78,11 @@ html[data-theme=dark] .main .btn-layer:hover {
 html[data-theme=dark] .indicator .in-l {
   width: 50%;
   height: 100%;
-  clip-path: polygon(0 0, 95% 0, 100% 100%, 0% 100%);
   background-color: rgb(247, 112, 15);
 }
 html[data-theme=dark] .indicator .in-r {
   width: 50%;
   height: 100%;
-  clip-path: polygon(5% 0, 100% 0%, 100% 100%, 0% 100%);
   background-color: rgb(247, 112, 15);
 }
 html[data-theme=dark] section#layer-01 {
@@ -111,6 +109,9 @@ html[data-theme=dark] section#layer-02 .box-t-02 .title-l-02 {
 }
 html[data-theme=dark] section#layer-02 .box-t-02 .vertical-line .v-left {
   border-right: 5px dotted rgb(247, 112, 15);
+}
+html[data-theme=dark] section#layer-02 .box-t-02 .vertical-line .v-left .s-02-i, html[data-theme=dark] section#layer-02 .box-t-02 .vertical-line .v-right .s-02-i {
+  filter: none;
 }
 html[data-theme=dark] section#layer-02 .box-t-02 .vertical-line .v-left h1, html[data-theme=dark] section#layer-02 .box-t-02 .vertical-line .v-right h1 {
   background: linear-gradient(110.4deg, rgb(247, 112, 15) 6.4%, rgb(248, 50, 88) 100.2%);

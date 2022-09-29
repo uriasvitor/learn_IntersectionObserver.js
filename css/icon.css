@@ -116,11 +116,21 @@
   clip-path: polygon(0 0, 95% 0, 101% 100%, 0% 100%);
   background-color: rgb(255, 255, 255);
 }
+@media screen and (max-width: 860px) {
+  .indicator .in-l {
+    clip-path: polygon(0 0, 84% 0, 101% 100%, 0% 100%);
+  }
+}
 .indicator .in-r {
   width: 50%;
   height: 100%;
   clip-path: polygon(5% 0, 100% 0%, 100% 100%, -1% 100%);
   background-color: rgb(255, 255, 255);
+}
+@media screen and (max-width: 860px) {
+  .indicator .in-r {
+    clip-path: polygon(13% 0, 100% 0%, 100% 100%, -1% 100%);
+  }
 }
 
 .info-box {
@@ -257,8 +267,8 @@
   font-weight: bold;
 }
 @media screen and (max-width: 860px) {
-  .info-box-02 .innerbox-02 .info-box-t-02 {
-    font-size: 12px;
+  .info-box-02 .innerbox-02 .info-box-t-02 .ibt-title-02 {
+    font-size: 26px;
   }
 }
 

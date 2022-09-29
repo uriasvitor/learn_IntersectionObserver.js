@@ -114,7 +114,6 @@ html[data-theme="dark"]{
       .in-l{
           width: 50%;
           height: 100%;
-          clip-path: polygon(0 0, 95% 0, 100% 100%, 0% 100%);
           background-color: $bg_tags;
       }
 
@@ -122,10 +121,10 @@ html[data-theme="dark"]{
       .in-r{
           width: 50%;
           height: 100%;
-          clip-path: polygon(5% 0, 100% 0%, 100% 100%, 0% 100%);
           background-color: $bg_tags;
       }
   }
+
   section#layer-01{
     background: $bg_tags;
 
@@ -161,7 +160,11 @@ html[data-theme="dark"]{
           border-right: 5px dotted rgb(247, 112, 15);
         }
 
-        .v-left,.v-right {
+        .v-left,.v-right {   
+          .s-02-i{
+            filter: none;
+          }
+
             h1{
               background: $s02_h_dark;
               -webkit-background-clip: text;

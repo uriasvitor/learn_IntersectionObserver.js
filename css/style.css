@@ -350,7 +350,9 @@ section#layer-01 .box-l-01 {
 section#layer-01 .video {
   width: 620px;
   height: 350px;
-  outline: 1px solid red;
+  border: 16px solid #141111;
+  border-radius: 0 32px;
+  box-shadow: 14px 17px 12px;
 }
 @media screen and (max-width: 1200px) {
   section#layer-01 .video {
@@ -360,6 +362,9 @@ section#layer-01 .video {
 @media screen and (max-width: 1200px) and (max-width: 860px) {
   section#layer-01 .video {
     width: 90vw;
+    border: none;
+    border-radius: none;
+    box-shadow: none;
   }
 }
 section#layer-01 .content-l-01r {
@@ -421,8 +426,10 @@ section#layer-01 .box-l-01r {
 }
 section#layer-01 .video-2 {
   width: 500px;
-  height: 350px;
-  outline: 1px solid red;
+  height: 89%;
+  border: 16px solid #141111;
+  border-radius: 0 32px;
+  box-shadow: inset 14px 17px 12px;
 }
 @media screen and (max-width: 1200px) {
   section#layer-01 .video-2 {
@@ -432,6 +439,9 @@ section#layer-01 .video-2 {
 @media screen and (max-width: 1200px) and (max-width: 860px) {
   section#layer-01 .video-2 {
     width: 90vw;
+    border: none;
+    border-radius: none;
+    box-shadow: none;
   }
 }
 
@@ -465,6 +475,9 @@ section#layer-02 .content-l-02 .box-t-02 .vertical-line .v-left, section#layer-0
   background: #fff;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+section#layer-02 .content-l-02 .box-t-02 .vertical-line .v-left .s-02-i, section#layer-02 .content-l-02 .box-t-02 .vertical-line .v-right .s-02-i {
+  filter: sepia(100%) contrast(100) grayscale(100%);
 }
 section#layer-02 .content-l-02 .box-t-02 .vertical-line .v-left h1, section#layer-02 .content-l-02 .box-t-02 .vertical-line .v-right h1 {
   font-size: 40px;
@@ -517,7 +530,12 @@ section#layer-02 .content-l-02 .box-t-02 .vertical-line .v-left .box-b-l-01 {
 }
 
 div#layer-03 {
-  height: 3000px;
+  height: 1863px;
+}
+@media screen and (max-width: 860px) {
+  div#layer-03 {
+    height: 3000px;
+  }
 }
 div#layer-03 .title-contact {
   display: flex;
@@ -597,6 +615,59 @@ div#layer-03 .content-l-03 .box-cards .card-03 {
 div#layer-03 .content-l-03 .box-cards .card-04 {
   background: linear-gradient(223deg, #ff0000, #ffe700);
   box-shadow: 0 0 6px 4px #fff, 0 0 10px 0px #ff0000, 0 0 14px 8px #ffe700;
+}
+
+footer {
+  height: 80px;
+}
+footer .fte-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+footer .fte-container .fte-container-in {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1190px;
+  height: 100%;
+}
+@media screen and (max-width: 860px) {
+  footer .fte-container .fte-container-in {
+    padding: 0 20px;
+    justify-content: space-around;
+  }
+}
+footer .fte-container .fte-container-in img {
+  max-width: 88px;
+  height: 60px;
+}
+
+.vi-bg {
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 14px 17px 12px;
+}
+@media screen and (max-width: 860px) {
+  .vi-bg {
+    border: none;
+    border-radius: none;
+    box-shadow: none;
+  }
+}
+
+.vi-bg-2 {
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 14px 17px 12px;
+}
+@media screen and (max-width: 860px) {
+  .vi-bg-2 {
+    border: none;
+    border-radius: none;
+    box-shadow: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
