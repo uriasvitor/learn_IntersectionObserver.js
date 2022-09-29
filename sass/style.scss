@@ -382,19 +382,12 @@ section#layer-01{
     .video{
         width: 620px;
         height: 350px;
-        border: 16px solid #141111;
-        border-radius: 0 32px;
-        box-shadow: 14px 17px 12px;
         
         @include medium-screen{
             width: 74vw;
 
             @include small-screen{
                 width: 90vw;
-
-                border: none;
-                border-radius: none;
-                box-shadow: none;
             }
         }
     }
@@ -460,19 +453,13 @@ section#layer-01{
 
     .video-2{
         width: 500px;
-        height: 89%;
-        border: 16px solid #141111;
-        border-radius: 0 32px;
-        box-shadow: inset 14px 17px 12px;
+        height: 100%;
         
         @include medium-screen{
             width: 74vw;
 
             @include small-screen{
                 width: 90vw;
-                border: none;
-                border-radius: none;
-                box-shadow: none;
             }
         }
     }
@@ -718,29 +705,8 @@ footer{
 
 
 
-.vi-bg{
+.vi-bg,.vi-bg-2{
     width: 100%;
     height: 100%;
-    box-shadow: inset 14px 17px 12px;
-
-    @include small-screen{
-        border: none;
-        border-radius: none;
-        box-shadow: none;
-    }
-
 }
 
-
-.vi-bg-2{
-    width: 100%;
-    height: 100%;
-    box-shadow: inset 14px 17px 12px;
-
-    @include small-screen{
-        border: none;
-        border-radius: none;
-        box-shadow: none;
-    }
-
-}

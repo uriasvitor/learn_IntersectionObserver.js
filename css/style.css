@@ -350,9 +350,6 @@ section#layer-01 .box-l-01 {
 section#layer-01 .video {
   width: 620px;
   height: 350px;
-  border: 16px solid #141111;
-  border-radius: 0 32px;
-  box-shadow: 14px 17px 12px;
 }
 @media screen and (max-width: 1200px) {
   section#layer-01 .video {
@@ -362,9 +359,6 @@ section#layer-01 .video {
 @media screen and (max-width: 1200px) and (max-width: 860px) {
   section#layer-01 .video {
     width: 90vw;
-    border: none;
-    border-radius: none;
-    box-shadow: none;
   }
 }
 section#layer-01 .content-l-01r {
@@ -426,10 +420,7 @@ section#layer-01 .box-l-01r {
 }
 section#layer-01 .video-2 {
   width: 500px;
-  height: 89%;
-  border: 16px solid #141111;
-  border-radius: 0 32px;
-  box-shadow: inset 14px 17px 12px;
+  height: 100%;
 }
 @media screen and (max-width: 1200px) {
   section#layer-01 .video-2 {
@@ -439,9 +430,6 @@ section#layer-01 .video-2 {
 @media screen and (max-width: 1200px) and (max-width: 860px) {
   section#layer-01 .video-2 {
     width: 90vw;
-    border: none;
-    border-radius: none;
-    box-shadow: none;
   }
 }
 
@@ -644,30 +632,9 @@ footer .fte-container .fte-container-in img {
   height: 60px;
 }
 
-.vi-bg {
+.vi-bg, .vi-bg-2 {
   width: 100%;
   height: 100%;
-  box-shadow: inset 14px 17px 12px;
-}
-@media screen and (max-width: 860px) {
-  .vi-bg {
-    border: none;
-    border-radius: none;
-    box-shadow: none;
-  }
-}
-
-.vi-bg-2 {
-  width: 100%;
-  height: 100%;
-  box-shadow: inset 14px 17px 12px;
-}
-@media screen and (max-width: 860px) {
-  .vi-bg-2 {
-    border: none;
-    border-radius: none;
-    box-shadow: none;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
